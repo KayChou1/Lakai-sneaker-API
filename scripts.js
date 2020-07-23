@@ -1,30 +1,36 @@
-let url = 'http://localhost:3000/people';
+let url = 'http://localhost:3000/sneakers';
 
 let container = document.querySelector('.container');
 let create = document.querySelector('.create');
 let update = document.querySelector('.update');
 const del = document.querySelector('.delete');
 
-let firstNameCreate = document.querySelector('.firstNameCreate');
-let lastNameCreate = document.querySelector('.lastNameCreate');
-let firstNameUpdate = document.querySelector('.firstNameUpdate');
-let lastNameUpdate= document.querySelector('.lastNameUpdate');
+let nameCreate = document.querySelector('.nameCreate');
+let sizeCreate = document.querySelector('.sizeCreate');
+
+let nameUpdate = document.querySelector('.nameUpdate');
+let sizeUpdate= document.querySelector('.sizeUpdate');
+let imageUpdate = document.querySelector('.imageUpdate');
+let colorUpdate= document.querySelector('.colorUpdate');
 let idUpdate = document.querySelector('.idUpdate');
 const deleteId = document.querySelector('.deleteId');
 
-create.addEventListener('click', addPerson);
-update.addEventListener('click', updatePerson);
-del.addEventListener('click', removeLast);
+create.addEventListener('click', addSneaker);
+update.addEventListener('click', updateSneaker);
+del.addEventListener('click', removeSneaker);
 
-function addPerson(){
-    let name = {
-        first: firstNameCreate.value,
-        last: lastNameCreate.value
+function addSneaker(){
+    let sneaker = {
+        name:  nameCreate.value,
+        size:  sizeCreate.value,
+        image: imageCreate.value,
+        color: colorCreate.value,
+       
     }
     fetch(url, {
         method: 'POST',
         headers: {'Content-Type': 'application/json'},
-        body: JSON.stringify(name)
+        body: JSON.stringify(sneaker)
 
     })
 
@@ -33,11 +39,13 @@ function addPerson(){
     updatePage();
 }
 
-function updatePerson(){
+function updateSneaker(){
     event.preventDefault()
     let name = {
-        first: firstNameUpdate.value,
-        last: lastNameUpdate.value
+        name:  nameUpdate.value,
+        size:  sizeUpdate.value,
+        image: imageUpdate.value,
+        color: colorUpdate.value
     }
     fetch(`${url}/${idUpdate.value}`,{
         method: 'PUT',
@@ -49,7 +57,7 @@ function updatePerson(){
     updatePage();
 }
 
-function removeLast(){
+function removeSneaker(){
     
     fetch(`${url}/${deleteId.value}`,{
         method: 'DELETE',
@@ -67,11 +75,19 @@ function updatePage(){
         const element = res[i];
         console.log(element)   
 
-        let person = document.createElement('h1');
+        let sneaker = document.createElement('h1');
+        let sneakerImage = document.createElement('img');
+        sneakerImage.src = element.image
+        let sneakerId = document.createElement('h1')
+        
+        sneakerId.innerHTML = `${element.id}`  
+        sneaker.innerHTML = `${element.name} `
 
-        person.innerHTML = `${element.first} ${element.last}`
+        sneaker.appendChild(sneakerImage)
+        sneaker.appendChild(sneakerId) 
 
-        container.prepend(person);
+        container.prepend(sneaker);
+        
     }
 
 })

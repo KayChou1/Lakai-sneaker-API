@@ -1,7 +1,7 @@
 {
   "name": "node-api-postgres",
   "version": "1.0.0",
-  "description": "",
+  "description": "Install the following dependencies: * npm i express pg * npm instal --save cors",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -13,5 +13,14 @@
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "pg": "^8.3.0"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KayChou1/Lakai-sneaker-API.git"
+  },
+  "bugs": {
+    "url": "https://github.com/KayChou1/Lakai-sneaker-API/issues"
+  },
+  "homepage": "https://github.com/KayChou1/Lakai-sneaker-API#readme"
 }

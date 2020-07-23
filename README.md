@@ -9,9 +9,10 @@ Install the following dependencies:
 * [✔] Decide what your new DB will contain
 * [✔] Create a new <code>Shoe</code> DataBase in PSQL
     * [✔] Fill contents of new DB
-* [] Add Dependencies
-    * [] Run <code>npm i express pg</code>
-    * [] Run <code>npm install --save cors</code>
+* [✔] Add Dependencies
+    * []  Run <code>npm init y </code>
+    * [✔] Run <code>npm i express pg</code>
+    * [✔] Run <code>npm install --save cors</code>
 * [] Access DB
     * []Change existing queries to match new DB structure
     * [] View json in console
