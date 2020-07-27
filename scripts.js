@@ -7,6 +7,8 @@ const del = document.querySelector('.delete');
 
 let nameCreate = document.querySelector('.nameCreate');
 let sizeCreate = document.querySelector('.sizeCreate');
+let imageCreate = document.querySelector('.imageCreate')
+let colorCreate = document.querySelector('.colorCreate')
 
 let nameUpdate = document.querySelector('.nameUpdate');
 let sizeUpdate= document.querySelector('.sizeUpdate');

@@ -34,7 +34,7 @@ const createSneakers = (request, response) => {
     if (error) {
       throw error
     }
-    response.status(201).send(`sneakers added: ${first}`)
+    response.status(201).send(`sneakers added: ${name}`)
   })
 }
 
