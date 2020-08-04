@@ -10,22 +10,26 @@ Install the following dependencies:
 * [✔] Create a new <code>Shoe</code> DataBase in PSQL
     * [✔] Fill contents of new DB
 * [✔] Add Dependencies
-    * []  Run <code>npm init y </code>
+    * [✔] Run <code>npm init y </code>
     * [✔] Run <code>npm i express pg</code>
     * [✔] Run <code>npm install --save cors</code>
-* [] Access DB
-    * []Change existing queries to match new DB structure
-    * [] View json in console
-* [] Manipulate informqtion to have a good looking app
-* [] Create README.md V1
-* [] Push to github
-    * [] Create repo
-    * [] Initialize git repository
-    * [] Add files to be committed 
-    * [] Create First commit 
-    * [] Add origin
-    * [] Push to origin master branch 
-    * []
+* [✔] Access DB
+    * [✔] Change existing queries to match new DB structure
+    * [✔] View json in console
+    * [✔] Add Shoes to Database
+* [✔] Manipulate informqtion to have a good looking app
+* [✔] Create README.md 
+* [✔] Push to github
+    * [✔] Create repo
+    * [✔] Initialize git repository
+    * [✔] Add files to be committed 
+    * [✔] Create First commit 
+    * [✔] Add origin
+    * [✔] Push to origin master branch 
+* [✔] Create an index.html
+* [✔] Create an style.css
+* [✔] Create an scripts.js
+    
 
 
 
