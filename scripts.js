@@ -1,4 +1,4 @@
-let url = 'https://3.81.70.212:3000/sneakers';
+let url = 'http://3.81.70.212:3000/sneakers';
 
 let container = document.querySelector('.container');
 let create = document.querySelector('.create');
