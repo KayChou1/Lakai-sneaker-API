@@ -73,6 +73,7 @@ function updatePage(){
     fetch(url)
     .then(res => res.json())
     .then(res => {
+        console.log(res)
     for (let i = 0; i < res.length; i++) {
         const element = res[i];
         console.log(element)   
